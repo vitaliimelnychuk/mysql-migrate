@@ -1,9 +1,9 @@
 {
   "local": {
-    "host": "192.168.7.48",
+    "host": " ",
     "user": "root",
-    "password" : "123root123",
-    "database": "test",
+    "password" : "",
+    "database": "",
     "driver": "mysql",
     "multipleStatements": true
   },
