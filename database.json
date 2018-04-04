@@ -1,0 +1,26 @@
+{
+  "local": {
+    "host": "192.168.7.48",
+    "user": "root",
+    "password" : "123root123",
+    "database": "test",
+    "driver": "mysql",
+    "multipleStatements": true
+  },
+  "dev": {
+    "host": "",
+    "user": "",
+    "password" : "",
+    "database": "",
+    "driver": "mysql",
+    "multipleStatements": true
+  },
+  "prod": {
+    "host": "",
+    "user": "",
+    "password" : "",
+    "database": "",
+    "driver": "mysql",
+    "multipleStatements": true
+  }
+}
