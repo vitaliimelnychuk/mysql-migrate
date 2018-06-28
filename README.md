@@ -16,4 +16,5 @@ docker run --rm -v $(pwd):/code mysql-migrate npm run migrate -- -e local create
 ## Run migrations
 
 docker run --rm mysql-migrate npm run migrate -- -e local up
+
 docker run --rm mysql-migrate npm run migrate -- -e local down
