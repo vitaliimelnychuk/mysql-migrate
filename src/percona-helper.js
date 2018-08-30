@@ -1,4 +1,4 @@
-const spawn = require("child_process").spawn;
+const { spawnSync } = require("child_process");
 
 class PerconaHelper {
 
@@ -7,21 +7,7 @@ class PerconaHelper {
     }
 
     execute(command, args) {
-
-        const child = spawn(command, args);
-        return this.attachLogs(child);
-    }
-
-    attachLogs(child) {
-        child.stdout.on('data', this.printData);
-        child.stderr.on('data', this.printData);
-        child.on('exit', process.exit);
-        
-        return child;
-    }
-
-    printData(data) {
-        console.log(data.toString());
+        return spawnSync(command, args, { stdio: 'inherit'});
     }
 
     run(table, type, query) {
